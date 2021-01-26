@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Designs</title>
+    <!--Style Sheets-->
+    <link href="remixicon/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ydq0ajx.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Tab icon -->
+    <link rel="icon" href="img/stellaDesignLogo.png">
+</head>
+
+<body class="homeback">
+    <div class="container">
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <!-- logo -->
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/stellaDesignLogo.png" alt="S/C Logo" style="height: 40px; ">
+                </a>
+            </nav>
+            <!-- buttons -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto float-right">
+                    <li class="nav-item active btn btn-outline-light mr-2">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item btn btn-outline-light mr-2">
+                        <a class="nav-link" href="resume.html" tabindex="-1" aria-disabled="true">Resume</a>
+                    </li>
+                    <!-- Contact Form Placeholder -->
+                    <li class="nav-item btn btn-outline-light mr-2">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                            onclick="myFunction()">Contact</a>
+                    </li>
+
+                    <!--Portfolio Dropdown -->
+                    <li class="nav-item dropdown btn btn-outline-light mr-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="DropdownFolioLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right btn btn-outline-light float-right"
+                            aria-labelledby="navbarDropdownMenuLink" style="width: fit-content;">
+                            <a class="dropdown-item" href="#portfolio">All</a>
+                            <a class="dropdown-item" href="craftespresso.html">Craft Espresso</a>
+                            <a class="dropdown-item" href="roarbikes.html">Roar Bikes</a>
+                            <a class="dropdown-item" href="http://www.angrypizza.org" target="_blank">Angry Pizza</a>
+                        </div>
+                    </li>
+                    <!--Mockup Dropdown -->
+                    <li class="nav-item dropdown btn btn-outline-light">
+                        <a class="nav-link dropdown-toggle" href="#" id="DropdownProtoLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Xd Prototypes
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right btn btn-outline-light float-right"
+                            aria-labelledby="DropdownProtoLink" style="width: fit-content;">
+                            <!--for adding work: <a class="dropdown-item" href="#" target="_blank"> </a> -->
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/ec214ffd-3682-4f2c-b77d-623f2d445ed2-b972/?fullscreen"
+                                target="_blank">Vannon Re-Design</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/e392a697-c793-42c1-b26d-2d791ee0e2bf-b6c1/?fullscreen"
+                                target="_blank">Craft Espresso</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/31a9ad16-51f7-4d57-8e6a-fd2aa8a09aed-64fa/?fullscreen"
+                                target="_blank">Craft Espresso: iPad</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/ab44ca80-dfff-43b3-85c9-408f45f07c1b-fe17/?fullscreen"
+                                target="_blank">Craft Espresso: Mobile</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/7312abbd-8846-4dc2-86fb-6466eca6521e-2641/?fullscreen"
+                                target="_blank">Roar Bikes</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/83d54ed7-0c4a-432d-b6cd-e9b2bb427b2b-d686/?fullscreen"
+                                target="_blank">Roar Bikes: Mobile</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/3331b954-3d25-4347-905c-2ad1a66511f4-6662/?fullscreen"
+                                target="_blank">Maynooth Furniture</a>
+                            <a class="dropdown-item"
+                                href="https://xd.adobe.com/view/c58eb7b5-ad56-41d8-8434-50454ff50d60-90dd/?fullscreen">Maynooth
+                                Furniture: Mobile</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!--Hero Box-->
+        <div class="herobox">
+            <img src="img/stellaDesignHeader.png" alt="Computer, laptop, ipad and iphone displaying mockup deign">
+        </div>
+        <!-- Freelancer Section -->
+        <section id="freelancer">
+            <div class="card-deck">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/desktopDesignBox.jpg"
+                            alt="Decorative image with glowing dots and logos connecting to a laptop">
+                        <div class="card-body">
+                            <h5 class="card-title">Desktop Design</h5>
+                            <p class="card-text">This involves the combination of typesetting (choosing fonts and the
+                                text layout), graphic design, page layout (how it all fits on the page) and color
+                                selection.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/mobileDesignBox.jpg"
+                            alt="Decorative image with cell phone, lines resembling code and word saying web design">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile Design</h5>
+                            <p class="card-text">Design for hand-held and wearable devices. Create solutions (typically
+                                applications) to meet mobile users' unique requirements and restrictions. Focus on
+                                accessibility, discoverability and efficiency to optimize on-the-go interactive
+                                experiences.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/responsiveDesignBox.jpg"
+                            alt="Decrrotive image with laptop, ipad and phone.">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Design</h5>
+                            <p class="card-text">Responsive web design makes web pages render well on a variety of
+                                devices and window or screen sizes. It makes use of flexible layouts, flexible images
+                                and cascading style sheet media queries.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/wordpressBox.jpg"
+                            alt="Decrotive image with laptop, images resembling code and icons">
+                        <div class="card-body">
+                            <h5 class="card-title">Wordpress</h5>
+                            <p class="card-text">WordPress is a free and open-source content management system written
+                                in PHP and paired with a MySQL or MariaDB database. Features include a plugin
+                                architecture and a template system, referred to within WordPress as Themes.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/logoDesignBox.jpg"
+                            alt="Decorative image of cell phone with arrrow logo on it.">
+                        <div class="card-body">
+                            <h5 class="card-title">Logo Design</h5>
+                            <p class="card-text">Creating the perfect visual brand mark for a company. Depending on the
+                                type, a logo usually consists of a symbol or brandmark and a logotype, along with a
+                                tagline.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="img/hp/frontEndDevelopmentBox.jpg"
+                            alt="Decrotive image with laptop, ipad, cell phone and code design">
+                        <div class="card-body">
+                            <h5 class="card-title">Front End Development</h5>
+                            <p class="card-text">Front end development manages everything that users visually see first
+                                in their browser or application, through the use of HTML, CSS, and JavaScript, so that
+                                users can view and interact with that data</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p><em>Click to View Full Design</em></p>
+                </div>
+
+                <div class="row portfolio-container">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <a href="https://xd.adobe.com/view/724b1f10-8fae-4a0b-abdb-724ad7472450-2718/?fullscreen">
+                                <img src="img/hp/HansonHolisticsDraft.jpg" class="img-fluid"
+                                    alt="Hanson Holistics Website Design">
+                                <div class="portfolio-info">
+                                    <h4>Hanson Holistics</h4>
+                                    <p>Re-Design &amp Website To Come</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <a href="craftespresso.html">
+                                <img src="img/ce/DesktopHome.jpg" class="img-fluid"
+                                    alt="craft espresso home page design">
+                                <div class="portfolio-info">
+                                    <h4>Craft Espresso</h4>
+                                    <p>Xd Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <a href="roarbikes.html">
+                                <img src="img/rb/rbHome.jpg" class="img-fluid" alt="Roar Bike Website Mockup">
+                                <div class="portfolio-info">
+                                    <h4>Roar Bikes</h4>
+                                    <p>Xd Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <a href="https://xd.adobe.com/view/ec214ffd-3682-4f2c-b77d-623f2d445ed2-b972/?fullscreen"
+                                target="_blank">
+                                <img src="img/hp/VannonHomePage.jpg" class="img-fluid"
+                                    alt="Homepage Mockup for Vannon Website">
+                                <div class="portfolio-info">
+                                    <h4>Vannon Homepage Re-Design </h4>
+                                    <p>Adobe Xd & Photoshop</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <a href="https://xd.adobe.com/view/3331b954-3d25-4347-905c-2ad1a66511f4-6662/?fullscreen"
+                                target="_blank">
+                                <img src="img/hp/maynoothHomepage.jpg" class="img-fluid"
+                                    alt="Maynooth Furniture Website Mockup">
+                                <div class="portfolio-info">
+                                    <h4>Maynooth Furniture</h4>
+                                    <p>Xd Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <a href="https://github.com/stella-designs/dansyogurt" target="_blank">
+                                <img src="img/hp/MockupDansyogurt.jpg" class="img-fluid"
+                                    alt="Dans Yogurt Website screen shot">
+                                <div class="portfolio-info">
+                                    <h4>Dans Yogurt</h4>
+                                    <p>HTML, CSS and Bootstrap</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <a href="https://github.com/stella-designs">
+                                <img src="img/hp/pexels-negative-space-169573.jpg" class="img-fluid"
+                                    alt="Woman holding cup of coffee fire image inside the cup">
+                                <div class="portfolio-info">
+                                    <h4>Portfolio Code</h4>
+                                    <p>On Github</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <a href="http://www.angrypizza.org" target="_blank">
+                                <img src="img/hp/angrypizzamenu.png" class="img-fluid"
+                                    alt="Angry Pizza Website Screenshot of menu">
+                                <div class="portfolio-info">
+                                    <h4>Angry Pizza</h4>
+                                    <p>Website Build on Wordpress</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <a href="#">
+                                <img src="img/hp/pexels-pixabay-78793.jpg" class="img-fluid"
+                                    alt="Woman dancing lorem ipsum and word Soul printed behind her">
+                                <div class="portfolio-info">
+                                    <h4>Auto Shop</h4>
+                                    <p>Re-Design &amp Website To Come</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!------ Image Modal -------->
+                    <div class="container my-4">
+
+                        <h2>Design</h2>
+
+                        <hr>
+                        <h5>Click to see larger image</h5>
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item"
+                                                        src="img/dp/doubleexposuremeditation.jpg"
+                                                        alt="Double exposure meditation" allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/doubleexposuremeditation.jpg"
+                                        alt="Double exposure meditation" data-toggle="modal" data-target="#modal1"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal6" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item"
+                                                        src="img/dp/dancerColorAccent.jpg" allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/dancerColorAccent.jpg" alt="video"
+                                        data-toggle="modal" data-target="#modal6"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal4" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item" src="img/dp/postcardMockup.jpg"
+                                                        alt="Layerd image campfire inside a cup" allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/postcardMockup.jpg"
+                                        alt="Layerd image campfire inside a cup" data-toggle="modal"
+                                        data-target="#modal4"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item"
+                                                        src="img/dp/GaH_longDocMockup.jpg" alt="Book mockup and design"
+                                                        allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/GaH_longDocMockup.jpg"
+                                        alt="Book mockup and design" data-toggle="modal" data-target="#modal2"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal5" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item" src="img/dp/foxAi.svg"
+                                                        alt="fox head logo" allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/foxAi.svg" alt="fox head logo"
+                                        data-toggle="modal" data-target="#modal5"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item" src="img/dp/fireincup.jpg"
+                                                        allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer d-block d-md-flex justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/fireincup.jpg" alt="#"
+                                        data-toggle="modal" data-target="#modal3"></a>
+
+                            </div>
+                            <!--End Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal7" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item" src="img/dp/touchup.jpg"
+                                                        allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer d-block d-md-flex justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/touchup.jpg" alt="#" data-toggle="modal"
+                                        data-target="#modal7"></a>
+
+                            </div>
+                            <!--End Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal8" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item"
+                                                        src="img/dp/GaHmagazineMockup.jpg" allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer d-block d-md-flex justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/GaHmagazineMockup.jpg" alt="#"
+                                        data-toggle="modal" data-target="#modal8"></a>
+
+                            </div>
+                            <!--End Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal9" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <img class="embed-responsive-item" src="img/dp/WaterColor.jpg"
+                                                        allowfullscreen>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer d-block d-md-flex justify-content-center">
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1" src="img/dp/WaterColor.jpg" alt="#"
+                                        data-toggle="modal" data-target="#modal9"></a>
+
+                            </div>
+                            <!--End Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <!-- End Image -->
+
+
+                </div>
+            </div>
+        </section><!-- End Portfolio Section -->
+
+        <!-- Social Media Links -->
+        <section id="socialmedia" class="parallax-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="https://www.behance.net/stellachaves" target="_blank">
+                            <img src="img/hp/behance.svg" class="img-responsive" alt="Behance logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="https://dribbble.com/Stella-designs" target="_blank">
+                            <img src="img/hp/dribbble.svg" class="img-responsive" alt="Dribble logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="https://github.com/stella-designs" target="_blank">
+                            <img src="img/hp/github.svg" class="img-responsive" alt="Github logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <a href="https://stella393067.invisionapp.com/board/Class-Projects-cka5nbep303c718x0lbjyzoe6"
+                            target="_blank">
+                            <img src="img/hp/invision.svg" class="img-responsive" alt="InVision logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer-->
+    <footer>
+    </footer>
+
+
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

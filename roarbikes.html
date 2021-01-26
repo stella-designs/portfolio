@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roar Bikes Design</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Style Sheets-->
+    <link href="remixicon/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ydq0ajx.css">
+    <!-- Tab Icon -->
+    <link rel="icon" href="img/stellaDesignLogo.png">
+</head>
+
+<body class="blackBackground">
+
+    <div class="container">
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <!-- logo -->
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/stellaWhiteLogo.png" alt="SC logo" style="height: 40px; ">
+                </a>
+            </nav>
+            <!-- buttons -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto float-right">
+                    <li class="nav-item btn btn-outline-light mr-2">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item btn btn-outline-light mr-2">
+                        <a class="nav-link" href="resume.html" tabindex="-1" aria-disabled="true">Resume</a>
+                    </li>
+                    <!-- Contact Form Placeholder -->
+                    <li class="nav-item btn btn-outline-light mr-2">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="myFunction()">Contact</a>
+                    </li>
+                    <!--Portfolio Dropdown -->
+                    <li class="nav-item dropdown btn btn-outline-light mr-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="DropdownFolioLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right btn btn-outline-light float-right"
+                            aria-labelledby="navbarDropdownMenuLink" style="width: fit-content;">
+                            <a class="dropdown-item" href="#portfolio">All</a>
+                            <a class="dropdown-item" href="craftespresso.html">Craft Espresso</a>
+                            <a class="dropdown-item" href="roarbikes.html">Roar Bikes</a>
+                            <a class="dropdown-item" href="http://www.angrypizza.org" target="_blank">Angry Pizza</a>
+                        </div>
+                    </li>
+                    <!--Mockup Dropdown -->
+                    <li class="nav-item dropdown btn btn-outline-light">
+                        <a class="nav-link dropdown-toggle" href="#" id="DropdownProtoLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Xd Prototypes
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right btn btn-outline-light float-right"
+                            aria-labelledby="DropdownProtoLink" style="width: fit-content;">
+                            <!--for adding work: <a class="dropdown-item" href="#" target="_blank"> </a> -->
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/ec214ffd-3682-4f2c-b77d-623f2d445ed2-b972/?fullscreen"
+                            target="_blank">Vannon Re-Design</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/e392a697-c793-42c1-b26d-2d791ee0e2bf-b6c1/?fullscreen" target="_blank">Craft Espresso</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/31a9ad16-51f7-4d57-8e6a-fd2aa8a09aed-64fa/?fullscreen" target="_blank">Craft Espresso: iPad</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/ab44ca80-dfff-43b3-85c9-408f45f07c1b-fe17/?fullscreen" target="_blank">Craft Espresso: Mobile</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/7312abbd-8846-4dc2-86fb-6466eca6521e-2641/?fullscreen" target="_blank">Roar Bikes</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/83d54ed7-0c4a-432d-b6cd-e9b2bb427b2b-d686/?fullscreen" target="_blank">Roar Bikes: Mobile</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/3331b954-3d25-4347-905c-2ad1a66511f4-6662/?fullscreen" target="_blank">Maynooth Furniture</a>
+                            <a class="dropdown-item" href="https://xd.adobe.com/view/c58eb7b5-ad56-41d8-8434-50454ff50d60-90dd/?fullscreen">Maynooth Furniture: Mobile</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!--Hero Box-->
+        <div class="herobox">
+            <img src="img/rb/displaysRB.png" alt="Computer, laptop, ipad and iphone displaying mockup deign">
+        </div>
+        <!--  OVERVIEW SECTION    -->
+
+        <section id="overview" class="parallax-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-10 col-sm-11">
+                        <img src="img/rb/roarPersona.jpg" class="img-responsive" alt="client persona">
+                        <blockquote>Target Client Persona</blockquote>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-4 col-md-11 col-sm-12">
+                        <div class="overview-detail">
+                            <h2 class="text-white">Introduction</h2>
+                            <p class="text-white-50">Adobe Xd class project in Ui/Ux Design Course with Daniel Scott. Students participate in a real-life freelance project for a bike shop. The project requires a fresh website and a mobile app interface. Preparing for dealing with real-world projects to move towards a UX/UI career path.</p>
+                            <p class="text-white-50">Target market client and brief provided in class. Finished design includes home page, 3 category pages, and product page. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-10 col-sm-12">
+                        <img src="img/rb/roarBrief.jpg" class="img-responsive" alt="Roar bikes brief">
+                        <blockquote>Brief for Roar Bikes Project using Adobe Xd</blockquote>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                    <div class="col-lg-7 col-md-11 col-sm-12">
+                        <img src="img/rb/wireframe.jpg" class="img-responsive" alt="Roar bikes wireframe" style="max-height: 450px;">
+                        <blockquote>Wireframes</blockquote>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-4 col-md-11 col-sm-12">
+                        <div class="overview-detail">
+                            <h2 class="text-white">Adobe Comp</h2>
+                            <p class="text-white-50">Presentable wireframes with Adobe Comp.</p>
+                            <p class="text-white-50">"Comp converts your rough shapes and lines into crisp graphics. Pull in vector shapes, images, colors, and text styles from your Adobe Creative Cloud Libraries and professional fonts from Adobe Typekit, and send your comps to Adobe Photoshop, Illustrator, or InDesign to finish on your desktop." ~ Adobe.com </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  Web Introduction SECTION    -->
+        <section id="webIntro" class="parallax-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-11 col-sm-12">
+                        <img src="img/rb/roarLaptop.png" alt="Laptop showing roar bikes page">
+
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-4 col-md-11 col-sm-12">
+                        <div class="intro-detail">
+                            <h2 class="text-white">Computer Design</h2>
+                            <p class="text-white-50" style="text-shadow: 1px 2px black;">Created 4 custom designs from scratch in this final Adobe Xd class. Home page and 3 product pages including login, shopping basket, and contact.</p>
+                            <p class="text-white-50" style="text-shadow: 1px 2px black;"> Design requirements including owner photos, logo, photographs of bikes, and theme colors. Photos from Unsplash and Pixels.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Mockup Section -->
+        <section id="mockup">
+            <!-- Web Mockup -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <img src="img/rb/rbHome.jpg" alt="Roar bikes homepage design">
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <img src="img/rb/rbSphynx.jpg" alt="Roar bikes product page">
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <img src="img/rb/rbBengal.jpg" alt="Roar bikes product page">
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <img src="img/rb/rbSiamese.jpg" alt="Roar bikes product page">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- wireframe -->
+        <section id="wireframe" class="parallax-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-11 col-sm-12">
+                        <img src="img/rb/uiAssets.jpg" class="img-responsive" alt="Screen shot of Ui assets for developer">
+                        <blockquote>Developer Assets</blockquote>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-4 col-md-11 col-sm-12">
+                        <div class="overview-detail">
+                            <h2 class="text-white">Sharing Ui Assets</h2>
+                            <p class="text-white-50">Export for developer use. Export photos, share character styles, colors, fonts, interactions, and CSS.</p>
+                            <p class="text-white-50">Allowing for comments and a shared platform to view real-time updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-10 col-sm-12">
+                        <img src="img/rb/prototypeRb.jpg" class="img-responsive" alt="screenshot of pages linked, prototype">
+                        <blockquote>Clickable Prototypes</blockquote>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--  Mobile Intro    -->
+        <section id="mobileIntro" class="parallax-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-11 col-sm-12">
+                        <img src="img/rb/iPhoneMockupRb.png" alt="two iphones displaying mobile version of site">
+
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-4 col-md-11 col-sm-12">
+                        <div class="intro-detail">
+                            <h2 class="text-white">Mobile Design</h2>
+                            <p class="text-white-50">Design a responsive site including all the same features from full-screen design in a well-formatted layout to fit mobile screens.</p>
+                            <p class="text-white-50">Adjustment for navbar utilizing the hamburger menu, as well as adjusting font and image sizes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Mock Up -->
+        <section id="roarmm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <img src="img/rb/HomeMobile.jpg" alt="mobile homepage">
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <img src="img/rb/SphynxMobile.jpg" alt="mobile product page">
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <img src="img/rb/BengalMobile.jpg" alt="mobile product page">
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <img src="img/rb/SiameseMobile.jpg" alt="mobile product page">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!--Footer-->
+    <footer>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
