@@ -133,6 +133,11 @@ li {
 
 #freelancer .card {
   margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.76);
+  border-color: none;
+}
+#freelancer img {
+  margin: 15px;
 }
 /* Introduction */
 
